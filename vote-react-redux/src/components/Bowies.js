@@ -29,6 +29,7 @@ const Bowies = props => {
 
 //will be able to comment out bowies in main
 const mapStateToProps = (state) => {
+    //gives us access to props from state
     return {
       bowies: state.bowies
     }
