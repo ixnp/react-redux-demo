@@ -1,4 +1,6 @@
 import React from 'react';
+import {connect} from 'react-redux'
+import {increaseVote, decreaseVote} from '../Actions'
 
 const BowieCard = ({bowie,increaseVote, decreaseVote}) => {
     
@@ -15,4 +17,11 @@ const BowieCard = ({bowie,increaseVote, decreaseVote}) => {
     )
 }
 
-export default BowieCard;
+const mapDispatchToProps = (dispatch) => {
+    return{
+        increaseVote: (id) => dispatch(increaseVote(id)),
+        decreaseVote: (id) => dispatch(decreaseVote(id))
+
+    }
+}
+export default connect(null,mapDispatchToProps)(BowieCard);
