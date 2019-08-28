@@ -1,10 +1,5 @@
 import {increaseVote, decreaseVote, initalizeBowies} from '../actions'
 
-import babyBowie from '../assets/babyBowie.jpeg';
-import hipsterBowie from '../assets/hipsterBowie.jpg';
-import ziggieBowie from '../assets/ziggyBowie.jpg';
-import goblinBowie from '../assets/goblinBowie.jpg';
-
  const initialState = {
         bowies: {}
  }
