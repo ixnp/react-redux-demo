@@ -1,9 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux'
-import {increaseVote,decreaseVote} from '../actions'
+import {increaseVote, decreaseVote} from '../actions'
 
-const BowieCard = ({bowie}) => {
-    
+const BowieCard = ({bowie,increaseVote, decreaseVote}) => {
+
+
+
 
     return(
         <div className='card'>
@@ -16,6 +18,7 @@ const BowieCard = ({bowie}) => {
         </div>
     )
 }
+
 const mapDispatchToProps = (dispatch) => {
     return{
         increaseVote: (id) => dispatch(increaseVote(id)),

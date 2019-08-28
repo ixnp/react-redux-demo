@@ -1,9 +1,19 @@
 import React, { Component } from 'react';
+import './App.css';
 import Header from './components/Header';
 import MainContainer from './components/MainContainer';
-import './App.css';
 
-class App extends Component {
+import {initalizeBowies} from './actions'
+import {connect} from 'react-redux'
+
+ class App extends Component {
+  
+  componentDidMount(){
+  this.props.initalizeBowies('bowies')
+
+  } 
+ 
+
   render() {
     return (
       <div className="App">
@@ -13,5 +23,9 @@ class App extends Component {
     );
   }
 }
-
-export default App;
+const mapDispatchToProps = (dispatch) => {
+  return{
+    initalizeBowies: (bowies) => dispatch(initalizeBowies(bowies))
+  }
+}
+export default connect(null,mapDispatchToProps)(App)

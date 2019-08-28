@@ -1,4 +1,4 @@
-import {increaseVote, decreaseVote} from '../actions'
+import {increaseVote, decreaseVote, initalizeBowies} from '../actions'
 
 import babyBowie from '../assets/babyBowie.jpeg';
 import hipsterBowie from '../assets/hipsterBowie.jpg';
@@ -6,36 +6,18 @@ import ziggieBowie from '../assets/ziggyBowie.jpg';
 import goblinBowie from '../assets/goblinBowie.jpg';
 
  const initialState = {
-        bowies: {
-            1: {
-                id: 1,
-                name: 'Baby Bowie',
-                votes: 0,
-                image: babyBowie
-            },
-            2: {
-                id: 2,
-                name: 'Hipster Bowie',
-                votes: 0,
-                image: hipsterBowie
-            },
-            3: {
-                id: 3,
-                name: 'Ziggie Stardust',
-                votes: 0,
-                image: ziggieBowie
-            },
-            4: {
-                id: 4,
-                name: 'Goblin King',
-                votes: -1000,
-                image: goblinBowie
-            },
-        }
+        bowies: {}
  }
  
+ 
  const bowieReducer = (state=initialState,action) => {
+    console.log('action')
     switch(action.type){
+        case 'CREATE_BOWIES' : {
+            console.log('create bowies: ', action.payload)
+            return {...state, bowies: action.payload}
+        }
+        
          case 'INCREASE_VOTE': {
              return {
                  ...state,

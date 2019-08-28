@@ -3,6 +3,7 @@ import BowieCard from './BowieCard';
 import {connect} from 'react-redux'
 
 const Bowies = (props) => {
+    console.log(props)
     const mapBowies = () => {
         let bowieArray = Object.values(props.bowies);
         let bowieCard = bowieArray.map(bowie => {

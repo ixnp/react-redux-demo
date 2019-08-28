@@ -1,0 +1,28 @@
+
+    { "bowies": {
+         "1": {
+             "id": "1",
+             "name": "Baby Bowie",
+             "votes": "0",
+             "image": "https://raw.githubusercontent.com/ixnp/images/master/assets/babyBowie.jpeg"
+         },
+         "2": {
+             "id": "2",
+             "name": "Hipster Bowie",
+             "votes": "0",
+             "image": "https://raw.githubusercontent.com/ixnp/images/master/assets/hipsterBowie.jpg"
+         },
+         "3": {
+             "id": "3",
+             "name": "Ziggie Stardust",
+             "votes": "0",
+             "image": "https://raw.githubusercontent.com/ixnp/images/master/assets/ziggyBowie.jpg"
+         },
+         "4": {
+             "id": "4",
+             "name": "Goblin King",
+             "votes": "-1000",
+             "image": "https://raw.githubusercontent.com/ixnp/images/master/assets/goblinBowie.jpg"
+         }
+     }
+ }
