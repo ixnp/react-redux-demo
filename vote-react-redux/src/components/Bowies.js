@@ -1,10 +1,11 @@
 import React from 'react';
 import BowieCard from './BowieCard';
+import {connect} from 'react-redux'
 
 const Bowies = props => {
-    console.log(props)
+    
     const mapBowies = () => {
-        let bowieArray = Object.values(props.bowies);
+        let bowieArray = Object.values(props.bowielist);
         let bowieCard = bowieArray.map(bowie => {
             return(
                 <BowieCard
@@ -25,5 +26,6 @@ const Bowies = props => {
         </div>
     )
 }
+
 
 export default Bowies

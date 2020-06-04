@@ -1,7 +1,9 @@
 import React from 'react';
 
+
+
 const BowieCard = ({bowie,increaseVote, decreaseVote}) => {
-    
+
 
     return(
         <div className='card'>
@@ -15,4 +17,6 @@ const BowieCard = ({bowie,increaseVote, decreaseVote}) => {
     )
 }
 
-export default BowieCard;
+
+
+export default BowieCard
